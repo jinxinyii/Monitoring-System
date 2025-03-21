@@ -22,52 +22,77 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        TextBox1 = New TextBox()
-        Button1 = New Button()
+        usernameTxt = New TextBox()
+        signinBtn = New Button()
         Label1 = New Label()
+        signupBtn = New Button()
+        passwordTxt = New TextBox()
         SuspendLayout()
         ' 
-        ' TextBox1
+        ' usernameTxt
         ' 
-        TextBox1.Location = New Point(62, 55)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(125, 27)
-        TextBox1.TabIndex = 1
+        usernameTxt.Location = New Point(86, 147)
+        usernameTxt.Name = "usernameTxt"
+        usernameTxt.Size = New Size(247, 27)
+        usernameTxt.TabIndex = 1
+        usernameTxt.Text = "Username"
         ' 
-        ' Button1
+        ' signinBtn
         ' 
-        Button1.Location = New Point(489, 96)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(94, 29)
-        Button1.TabIndex = 2
-        Button1.Text = "Button1"
-        Button1.UseVisualStyleBackColor = True
+        signinBtn.Location = New Point(86, 244)
+        signinBtn.Name = "signinBtn"
+        signinBtn.Size = New Size(94, 29)
+        signinBtn.TabIndex = 2
+        signinBtn.Text = "SIGN IN"
+        signinBtn.UseVisualStyleBackColor = True
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(226, 33)
+        Label1.Font = New Font("Segoe UI", 22.0F)
+        Label1.Location = New Point(132, 66)
         Label1.Name = "Label1"
-        Label1.Size = New Size(53, 20)
+        Label1.Size = New Size(153, 50)
         Label1.TabIndex = 0
-        Label1.Text = "Label1"
+        Label1.Text = "SIGN IN"
+        ' 
+        ' signupBtn
+        ' 
+        signupBtn.Location = New Point(239, 244)
+        signupBtn.Name = "signupBtn"
+        signupBtn.Size = New Size(94, 29)
+        signupBtn.TabIndex = 3
+        signupBtn.Text = "SIGN UP"
+        signupBtn.UseVisualStyleBackColor = True
+        ' 
+        ' passwordTxt
+        ' 
+        passwordTxt.Location = New Point(86, 193)
+        passwordTxt.Name = "passwordTxt"
+        passwordTxt.Size = New Size(247, 27)
+        passwordTxt.TabIndex = 4
+        passwordTxt.Text = "Password"
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
-        Controls.Add(Button1)
-        Controls.Add(TextBox1)
+        ClientSize = New Size(422, 364)
+        Controls.Add(passwordTxt)
+        Controls.Add(signupBtn)
+        Controls.Add(signinBtn)
+        Controls.Add(usernameTxt)
         Controls.Add(Label1)
         Name = "Form1"
-        Text = "Form1"
+        Text = "Sign In"
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents usernameTxt As TextBox
+    Friend WithEvents signinBtn As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents signupBtn As Button
+    Friend WithEvents passwordTxt As TextBox
 
 End Class
