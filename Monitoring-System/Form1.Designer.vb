@@ -31,17 +31,18 @@ Partial Class Form1
         ' 
         ' usernameTxt
         ' 
-        usernameTxt.Location = New Point(86, 147)
+        usernameTxt.Location = New Point(108, 184)
+        usernameTxt.Margin = New Padding(4)
         usernameTxt.Name = "usernameTxt"
-        usernameTxt.Size = New Size(247, 27)
+        usernameTxt.Size = New Size(308, 31)
         usernameTxt.TabIndex = 1
-        usernameTxt.Text = "Username"
         ' 
         ' signinBtn
         ' 
-        signinBtn.Location = New Point(86, 244)
+        signinBtn.Location = New Point(108, 305)
+        signinBtn.Margin = New Padding(4)
         signinBtn.Name = "signinBtn"
-        signinBtn.Size = New Size(94, 29)
+        signinBtn.Size = New Size(118, 36)
         signinBtn.TabIndex = 2
         signinBtn.Text = "SIGN IN"
         signinBtn.UseVisualStyleBackColor = True
@@ -49,40 +50,43 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 22.0F)
-        Label1.Location = New Point(132, 66)
+        Label1.Font = New Font("Segoe UI", 22F)
+        Label1.Location = New Point(165, 82)
+        Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(153, 50)
+        Label1.Size = New Size(180, 60)
         Label1.TabIndex = 0
         Label1.Text = "SIGN IN"
         ' 
         ' signupBtn
         ' 
-        signupBtn.Location = New Point(239, 244)
+        signupBtn.Location = New Point(299, 305)
+        signupBtn.Margin = New Padding(4)
         signupBtn.Name = "signupBtn"
-        signupBtn.Size = New Size(94, 29)
+        signupBtn.Size = New Size(118, 36)
         signupBtn.TabIndex = 3
         signupBtn.Text = "SIGN UP"
         signupBtn.UseVisualStyleBackColor = True
         ' 
         ' passwordTxt
         ' 
-        passwordTxt.Location = New Point(86, 193)
+        passwordTxt.Location = New Point(108, 241)
+        passwordTxt.Margin = New Padding(4)
         passwordTxt.Name = "passwordTxt"
-        passwordTxt.Size = New Size(247, 27)
+        passwordTxt.Size = New Size(308, 31)
         passwordTxt.TabIndex = 4
-        passwordTxt.Text = "Password"
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(422, 364)
+        ClientSize = New Size(528, 455)
         Controls.Add(passwordTxt)
         Controls.Add(signupBtn)
         Controls.Add(signinBtn)
         Controls.Add(usernameTxt)
         Controls.Add(Label1)
+        Margin = New Padding(4)
         Name = "Form1"
         Text = "Sign In"
         ResumeLayout(False)
