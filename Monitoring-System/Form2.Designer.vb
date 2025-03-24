@@ -109,7 +109,7 @@ Partial Class Form2
         cancelBtn.Name = "cancelBtn"
         cancelBtn.Size = New Size(118, 36)
         cancelBtn.TabIndex = 9
-        cancelBtn.Text = "SIGN UP"
+        cancelBtn.Text = "CANCEL"
         cancelBtn.UseVisualStyleBackColor = True
         ' 
         ' Form2

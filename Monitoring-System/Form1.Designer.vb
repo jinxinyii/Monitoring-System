@@ -31,7 +31,7 @@ Partial Class Form1
         ' 
         ' usernameTxt
         ' 
-        usernameTxt.Location = New Point(108, 184)
+        usernameTxt.Location = New Point(108, 148)
         usernameTxt.Margin = New Padding(4)
         usernameTxt.Name = "usernameTxt"
         usernameTxt.Size = New Size(308, 31)
@@ -39,7 +39,7 @@ Partial Class Form1
         ' 
         ' signinBtn
         ' 
-        signinBtn.Location = New Point(108, 305)
+        signinBtn.Location = New Point(108, 269)
         signinBtn.Margin = New Padding(4)
         signinBtn.Name = "signinBtn"
         signinBtn.Size = New Size(118, 36)
@@ -51,7 +51,7 @@ Partial Class Form1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 22F)
-        Label1.Location = New Point(165, 82)
+        Label1.Location = New Point(165, 46)
         Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
         Label1.Size = New Size(180, 60)
@@ -60,7 +60,7 @@ Partial Class Form1
         ' 
         ' signupBtn
         ' 
-        signupBtn.Location = New Point(299, 305)
+        signupBtn.Location = New Point(299, 269)
         signupBtn.Margin = New Padding(4)
         signupBtn.Name = "signupBtn"
         signupBtn.Size = New Size(118, 36)
@@ -70,7 +70,7 @@ Partial Class Form1
         ' 
         ' passwordTxt
         ' 
-        passwordTxt.Location = New Point(108, 241)
+        passwordTxt.Location = New Point(108, 205)
         passwordTxt.Margin = New Padding(4)
         passwordTxt.Name = "passwordTxt"
         passwordTxt.Size = New Size(308, 31)
@@ -80,7 +80,7 @@ Partial Class Form1
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(528, 455)
+        ClientSize = New Size(528, 364)
         Controls.Add(passwordTxt)
         Controls.Add(signupBtn)
         Controls.Add(signinBtn)
