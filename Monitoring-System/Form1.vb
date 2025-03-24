@@ -1,40 +1,5 @@
 ﻿Public Class Form1
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        SetPlaceholder(usernameTxt, "Enter Username")
-        SetPlaceholder(passwordTxt, "Enter Password")
-    End Sub
-
-    Private Sub usernameTxt_GotFocus(sender As Object, e As EventArgs) Handles usernameTxt.GotFocus
-        RemovePlaceholder(usernameTxt, "Enter Username")
-    End Sub
-
-    Private Sub usernameTxt_LostFocus(sender As Object, e As EventArgs) Handles usernameTxt.LostFocus
-        SetPlaceholder(usernameTxt, "Enter Username")
-    End Sub
-
-    Private Sub passwordTxt_GotFocus(sender As Object, e As EventArgs) Handles passwordTxt.GotFocus
-        RemovePlaceholder(passwordTxt, "Enter Password")
-    End Sub
-
-    Private Sub passwordTxt_LostFocus(sender As Object, e As EventArgs) Handles passwordTxt.LostFocus
-        SetPlaceholder(passwordTxt, "Enter Password")
-    End Sub
-
-    Private Sub SetPlaceholder(textBox As TextBox, placeholder As String)
-        If String.IsNullOrWhiteSpace(textBox.Text) Then
-            textBox.Text = placeholder
-            textBox.ForeColor = Color.Gray
-        End If
-    End Sub
-
-    Private Sub RemovePlaceholder(textBox As TextBox, placeholder As String)
-        If textBox.Text = placeholder Then
-            textBox.Text = ""
-            textBox.ForeColor = Color.Black
-        End If
-    End Sub
-
     Private Sub signinBtn_Click(sender As Object, e As EventArgs) Handles signinBtn.Click
 
     End Sub
@@ -43,6 +8,34 @@
         Dim form2 As New Form2()
         form2.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub TextBox_GotFocus(sender As Object, e As EventArgs) Handles usernameTxt.GotFocus, passwordTxt.GotFocus
+        Dim txtBox As TextBox = CType(sender, TextBox)
+        If txtBox.ForeColor = Color.Gray Then
+            txtBox.Text = ""
+            txtBox.ForeColor = Color.Black
+        End If
+    End Sub
+
+    Private Sub TextBox_LostFocus(sender As Object, e As EventArgs) Handles usernameTxt.LostFocus, passwordTxt.LostFocus
+        Dim txtBox As TextBox = CType(sender, TextBox)
+        If String.IsNullOrWhiteSpace(txtBox.Text) Then
+            txtBox.ForeColor = Color.Gray
+            Select Case txtBox.Name
+                Case "usernameTxt"
+                    txtBox.Text = "Enter Username"
+                Case "passwordTxt"
+                    txtBox.Text = "Enter Password"
+            End Select
+        End If
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        usernameTxt.Text = "Enter Username"
+        usernameTxt.ForeColor = Color.Gray
+        passwordTxt.Text = "Enter Password"
+        passwordTxt.ForeColor = Color.Gray
     End Sub
 
 End Class

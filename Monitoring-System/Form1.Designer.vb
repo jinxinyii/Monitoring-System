@@ -36,6 +36,8 @@ Partial Class Form1
         usernameTxt.Name = "usernameTxt"
         usernameTxt.Size = New Size(308, 31)
         usernameTxt.TabIndex = 1
+        usernameTxt.Text = "Enter Username"
+        usernameTxt.ForeColor = Color.Gray
         ' 
         ' signinBtn
         ' 
@@ -75,6 +77,8 @@ Partial Class Form1
         passwordTxt.Name = "passwordTxt"
         passwordTxt.Size = New Size(308, 31)
         passwordTxt.TabIndex = 4
+        passwordTxt.Text = "Enter Password"
+        passwordTxt.ForeColor = Color.Gray
         ' 
         ' Form1
         ' 

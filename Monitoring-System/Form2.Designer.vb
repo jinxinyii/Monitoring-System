@@ -51,6 +51,8 @@ Partial Class Form2
         firstNameTxt.Name = "firstNameTxt"
         firstNameTxt.Size = New Size(308, 31)
         firstNameTxt.TabIndex = 2
+        firstNameTxt.Text = "First Name"
+        firstNameTxt.ForeColor = Color.Gray
         ' 
         ' lastNameTxt
         ' 
@@ -59,6 +61,8 @@ Partial Class Form2
         lastNameTxt.Name = "lastNameTxt"
         lastNameTxt.Size = New Size(308, 31)
         lastNameTxt.TabIndex = 3
+        lastNameTxt.Text = "Last Name"
+        lastNameTxt.ForeColor = Color.Gray
         ' 
         ' emailTxt
         ' 
@@ -67,6 +71,8 @@ Partial Class Form2
         emailTxt.Name = "emailTxt"
         emailTxt.Size = New Size(308, 31)
         emailTxt.TabIndex = 4
+        emailTxt.Text = "Email"
+        emailTxt.ForeColor = Color.Gray
         ' 
         ' phoneNumberTxt
         ' 
@@ -75,6 +81,8 @@ Partial Class Form2
         phoneNumberTxt.Name = "phoneNumberTxt"
         phoneNumberTxt.Size = New Size(308, 31)
         phoneNumberTxt.TabIndex = 5
+        phoneNumberTxt.Text = "Phone Number"
+        phoneNumberTxt.ForeColor = Color.Gray
         ' 
         ' passwordTxt
         ' 
@@ -83,6 +91,8 @@ Partial Class Form2
         passwordTxt.Name = "passwordTxt"
         passwordTxt.Size = New Size(308, 31)
         passwordTxt.TabIndex = 6
+        passwordTxt.Text = "Password"
+        passwordTxt.ForeColor = Color.Gray
         ' 
         ' confirmPasswordTxt
         ' 
@@ -91,6 +101,8 @@ Partial Class Form2
         confirmPasswordTxt.Name = "confirmPasswordTxt"
         confirmPasswordTxt.Size = New Size(308, 31)
         confirmPasswordTxt.TabIndex = 7
+        confirmPasswordTxt.Text = "Confirm Password"
+        confirmPasswordTxt.ForeColor = Color.Gray
         ' 
         ' signupBtn
         ' 
