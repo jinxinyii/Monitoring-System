@@ -79,6 +79,7 @@ Partial Class Form1
         passwordTxt.TabIndex = 4
         passwordTxt.Text = "Enter Password"
         passwordTxt.ForeColor = Color.Gray
+        passwordTxt.UseSystemPasswordChar = True
         ' 
         ' Form1
         ' 

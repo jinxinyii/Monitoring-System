@@ -85,6 +85,7 @@ Partial Class Form2
         passwordTxt.ForeColor = Color.Gray
         passwordTxt.Location = New Point(98, 298)
         passwordTxt.Name = "passwordTxt"
+        passwordTxt.UseSystemPasswordChar = True
         passwordTxt.Size = New Size(247, 27)
         passwordTxt.TabIndex = 6
         passwordTxt.Text = "Password"
@@ -94,6 +95,7 @@ Partial Class Form2
         confirmPasswordTxt.ForeColor = Color.Gray
         confirmPasswordTxt.Location = New Point(98, 337)
         confirmPasswordTxt.Name = "confirmPasswordTxt"
+        confirmPasswordTxt.UseSystemPasswordChar = True
         confirmPasswordTxt.Size = New Size(247, 27)
         confirmPasswordTxt.TabIndex = 7
         confirmPasswordTxt.Text = "Confirm Password"
@@ -127,7 +129,7 @@ Partial Class Form2
         ' 
         ' Form2
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(454, 445)
         Controls.Add(usernameTxt)
@@ -140,7 +142,7 @@ Partial Class Form2
         Controls.Add(lastNameTxt)
         Controls.Add(firstNameTxt)
         Controls.Add(Label1)
-        Margin = New Padding(2, 2, 2, 2)
+        Margin = New Padding(2)
         Name = "Form2"
         Text = "Sign Up"
         ResumeLayout(False)
