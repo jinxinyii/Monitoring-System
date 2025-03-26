@@ -1,6 +1,6 @@
 ﻿Public Class Form2
     Private Sub signupBtn_Click(sender As Object, e As EventArgs) Handles signupBtn.Click
-        ' Handle sign up logic here
+
     End Sub
 
     Private Sub cancelBtn_Click(sender As Object, e As EventArgs) Handles cancelBtn.Click
@@ -9,16 +9,16 @@
         Me.Hide()
     End Sub
 
-    Private Sub TextBox_GotFocus(sender As Object, e As EventArgs) Handles firstNameTxt.GotFocus, lastNameTxt.GotFocus, emailTxt.GotFocus, phoneNumberTxt.GotFocus, passwordTxt.GotFocus, confirmPasswordTxt.GotFocus
-        Dim txtBox As TextBox = CType(sender, TextBox)
+    Private Sub TextBox_GotFocus(sender As Object, e As EventArgs) Handles firstNameTxt.GotFocus, lastNameTxt.GotFocus, usernameTxt.GotFocus, emailTxt.GotFocus, phoneNumberTxt.GotFocus, passwordTxt.GotFocus, confirmPasswordTxt.GotFocus
+        Dim txtBox = CType(sender, TextBox)
         If txtBox.ForeColor = Color.Gray Then
             txtBox.Text = ""
             txtBox.ForeColor = Color.Black
         End If
     End Sub
 
-    Private Sub TextBox_LostFocus(sender As Object, e As EventArgs) Handles firstNameTxt.LostFocus, lastNameTxt.LostFocus, emailTxt.LostFocus, phoneNumberTxt.LostFocus, passwordTxt.LostFocus, confirmPasswordTxt.LostFocus
-        Dim txtBox As TextBox = CType(sender, TextBox)
+    Private Sub TextBox_LostFocus(sender As Object, e As EventArgs) Handles firstNameTxt.LostFocus, lastNameTxt.LostFocus, usernameTxt.LostFocus, emailTxt.LostFocus, phoneNumberTxt.LostFocus, passwordTxt.LostFocus, confirmPasswordTxt.LostFocus
+        Dim txtBox = CType(sender, TextBox)
         If String.IsNullOrWhiteSpace(txtBox.Text) Then
             txtBox.ForeColor = Color.Gray
             Select Case txtBox.Name
@@ -26,6 +26,8 @@
                     txtBox.Text = "First Name"
                 Case "lastNameTxt"
                     txtBox.Text = "Last Name"
+                Case "usernameTxt"
+                    txtBox.Text = "Username"
                 Case "emailTxt"
                     txtBox.Text = "Email"
                 Case "phoneNumberTxt"

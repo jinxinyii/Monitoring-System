@@ -31,104 +31,106 @@ Partial Class Form2
         confirmPasswordTxt = New TextBox()
         signupBtn = New Button()
         cancelBtn = New Button()
+        usernameTxt = New TextBox()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 22F)
-        Label1.Location = New Point(183, 32)
-        Label1.Margin = New Padding(4, 0, 4, 0)
+        Label1.Location = New Point(146, 26)
         Label1.Name = "Label1"
-        Label1.Size = New Size(190, 60)
+        Label1.Size = New Size(161, 50)
         Label1.TabIndex = 1
         Label1.Text = "SIGN UP"
         ' 
         ' firstNameTxt
         ' 
-        firstNameTxt.Location = New Point(122, 117)
-        firstNameTxt.Margin = New Padding(4)
+        firstNameTxt.ForeColor = Color.Gray
+        firstNameTxt.Location = New Point(98, 94)
         firstNameTxt.Name = "firstNameTxt"
-        firstNameTxt.Size = New Size(308, 31)
+        firstNameTxt.Size = New Size(247, 27)
         firstNameTxt.TabIndex = 2
         firstNameTxt.Text = "First Name"
-        firstNameTxt.ForeColor = Color.Gray
         ' 
         ' lastNameTxt
         ' 
-        lastNameTxt.Location = New Point(122, 166)
-        lastNameTxt.Margin = New Padding(4)
+        lastNameTxt.ForeColor = Color.Gray
+        lastNameTxt.Location = New Point(98, 133)
         lastNameTxt.Name = "lastNameTxt"
-        lastNameTxt.Size = New Size(308, 31)
+        lastNameTxt.Size = New Size(247, 27)
         lastNameTxt.TabIndex = 3
         lastNameTxt.Text = "Last Name"
-        lastNameTxt.ForeColor = Color.Gray
         ' 
         ' emailTxt
         ' 
-        emailTxt.Location = New Point(122, 217)
-        emailTxt.Margin = New Padding(4)
+        emailTxt.ForeColor = Color.Gray
+        emailTxt.Location = New Point(98, 217)
         emailTxt.Name = "emailTxt"
-        emailTxt.Size = New Size(308, 31)
+        emailTxt.Size = New Size(247, 27)
         emailTxt.TabIndex = 4
         emailTxt.Text = "Email"
-        emailTxt.ForeColor = Color.Gray
         ' 
         ' phoneNumberTxt
         ' 
-        phoneNumberTxt.Location = New Point(122, 269)
-        phoneNumberTxt.Margin = New Padding(4)
+        phoneNumberTxt.ForeColor = Color.Gray
+        phoneNumberTxt.Location = New Point(98, 258)
         phoneNumberTxt.Name = "phoneNumberTxt"
-        phoneNumberTxt.Size = New Size(308, 31)
+        phoneNumberTxt.Size = New Size(247, 27)
         phoneNumberTxt.TabIndex = 5
         phoneNumberTxt.Text = "Phone Number"
-        phoneNumberTxt.ForeColor = Color.Gray
         ' 
         ' passwordTxt
         ' 
-        passwordTxt.Location = New Point(122, 319)
-        passwordTxt.Margin = New Padding(4)
+        passwordTxt.ForeColor = Color.Gray
+        passwordTxt.Location = New Point(98, 298)
         passwordTxt.Name = "passwordTxt"
-        passwordTxt.Size = New Size(308, 31)
+        passwordTxt.Size = New Size(247, 27)
         passwordTxt.TabIndex = 6
         passwordTxt.Text = "Password"
-        passwordTxt.ForeColor = Color.Gray
         ' 
         ' confirmPasswordTxt
         ' 
-        confirmPasswordTxt.Location = New Point(122, 368)
-        confirmPasswordTxt.Margin = New Padding(4)
+        confirmPasswordTxt.ForeColor = Color.Gray
+        confirmPasswordTxt.Location = New Point(98, 337)
         confirmPasswordTxt.Name = "confirmPasswordTxt"
-        confirmPasswordTxt.Size = New Size(308, 31)
+        confirmPasswordTxt.Size = New Size(247, 27)
         confirmPasswordTxt.TabIndex = 7
         confirmPasswordTxt.Text = "Confirm Password"
-        confirmPasswordTxt.ForeColor = Color.Gray
         ' 
         ' signupBtn
         ' 
-        signupBtn.Location = New Point(122, 418)
-        signupBtn.Margin = New Padding(4)
+        signupBtn.Location = New Point(98, 377)
         signupBtn.Name = "signupBtn"
-        signupBtn.Size = New Size(118, 36)
+        signupBtn.Size = New Size(94, 29)
         signupBtn.TabIndex = 8
         signupBtn.Text = "SIGN UP"
         signupBtn.UseVisualStyleBackColor = True
         ' 
         ' cancelBtn
         ' 
-        cancelBtn.Location = New Point(312, 418)
-        cancelBtn.Margin = New Padding(4)
+        cancelBtn.Location = New Point(250, 377)
         cancelBtn.Name = "cancelBtn"
-        cancelBtn.Size = New Size(118, 36)
+        cancelBtn.Size = New Size(94, 29)
         cancelBtn.TabIndex = 9
         cancelBtn.Text = "CANCEL"
         cancelBtn.UseVisualStyleBackColor = True
         ' 
+        ' usernameTxt
+        ' 
+        usernameTxt.ForeColor = Color.Gray
+        usernameTxt.Location = New Point(97, 175)
+        usernameTxt.Name = "usernameTxt"
+        usernameTxt.Size = New Size(247, 27)
+        usernameTxt.TabIndex = 10
+        usernameTxt.Text = "Username"
+        ' 
         ' Form2
         ' 
-        AutoScaleDimensions = New SizeF(10F, 25F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(568, 499)
+        ClientSize = New Size(454, 445)
+        Controls.Add(usernameTxt)
         Controls.Add(cancelBtn)
         Controls.Add(signupBtn)
         Controls.Add(confirmPasswordTxt)
@@ -138,6 +140,7 @@ Partial Class Form2
         Controls.Add(lastNameTxt)
         Controls.Add(firstNameTxt)
         Controls.Add(Label1)
+        Margin = New Padding(2, 2, 2, 2)
         Name = "Form2"
         Text = "Sign Up"
         ResumeLayout(False)
@@ -153,4 +156,5 @@ Partial Class Form2
     Friend WithEvents confirmPasswordTxt As TextBox
     Friend WithEvents signupBtn As Button
     Friend WithEvents cancelBtn As Button
+    Friend WithEvents usernameTxt As TextBox
 End Class
